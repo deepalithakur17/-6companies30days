@@ -2,9 +2,9 @@
 
 | S. No. | Problem | Solution |
 | ------ |:-------:| ------------ |
-| 1 | [You are given an array of strings tokens that represents an arithmetic expression in a Reverse Polish Notation.](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [✅](https://leetcode.com/problems/evaluate-reverse-polish-notation/submissions/869262397/) |
-| 2 | [Combination Sum with a twist.](https://leetcode.com/problems/combination-sum-iii/) | [ ✅](https://leetcode.com/problems/combination-sum-iii/submissions/869662678/)|
-| 3 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [✅](https://leetcode.com/problems/bulls-and-cows/submissions/869476279/ ) |
+| 1 | [You are given an array of strings tokens that represents an arithmetic expression in a Reverse Polish Notation.](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | ✅ |
+| 2 | [Combination Sum with a twist.](https://leetcode.com/problems/combination-sum-iii/) |  ✅|
+| 3 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | ✅ |
 | 4 | [You are given an integer array nums of length n. Return maximum length of Rotation Function.](https://leetcode.com/problems/rotate-function/) |  |   |
 | 5 | [Largest Divisible Subset.](https://leetcode.com/problems/largest-divisible-subset/) |  |
 | 6 | [How to find a perfect Rectangle.](https://leetcode.com/problems/perfect-rectangle/) |  |
