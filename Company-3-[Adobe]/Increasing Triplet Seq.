@@ -1,0 +1,28 @@
+class Solution {
+public:
+    bool increasingTriplet(vector<int>& nums) {
+        int n=nums.size();
+        int num=INT_MAX, mid=INT_MAX;
+        int i=0;
+        while(i<n)
+        {
+            if(nums[i]>mid && nums[i]>num)
+            {
+                return true;
+            }
+            if(nums[i]<num)
+            {
+                num=nums[i];
+            }
+            else
+            {
+                if(nums[i]>num && nums[i]<mid)
+                {
+                    mid=nums[i];
+                }
+            }
+            i++;
+        }
+        return false;
+    }
+};
