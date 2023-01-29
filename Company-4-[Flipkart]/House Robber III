@@ -51,7 +51,6 @@ public:
             }
 
         }
-        cout<<sum<<" "<<sum1;
         return max(sum,sum1);
     }
 };
