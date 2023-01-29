@@ -1,0 +1,57 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int rob(TreeNode* root) 
+    {
+        int n=0,sum=0,sum1=0;
+        queue<TreeNode*>q;
+        q.push(root);
+        q.push(NULL);
+        while(q.empty()!=1)
+        {
+            TreeNode* temp=q.front();
+            q.pop();
+            if(temp==NULL)
+            {
+                if(q.empty()==1)
+                {
+                    q.push(NULL);
+                    n++;
+                }
+            }
+            else
+            {
+                if(temp->left)
+                {
+                    q.push(temp->left);
+                }
+                else
+                {
+                    q.push(temp->right);
+                }
+            }
+            int num1=*(temp->val);
+            if(n%2==0)
+            {
+                sum=sum+num1;
+            }
+            else
+            {
+                sum1=sum1+num1;
+            }
+
+        }
+        cout<<sum<<" "<<sum1;
+        return max(sum,sum1);
+    }
+};
